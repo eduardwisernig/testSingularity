@@ -16,6 +16,10 @@ ls -lah
 
 %post  
 echo "This section happens once after bootstrap to build the image."  
-mkdir -p /code
+mkdir -p /code123
+echo ${SINGULARITY_ROOTFS}
 echo "echo RoooAAAAR" >> /code/rawr.sh
-chmod u+x /code/rawr.sh  
+chmod u+x /code/rawr.sh
+%files
+src/testSingularity.f90
+ls -lah
