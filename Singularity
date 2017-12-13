@@ -16,6 +16,6 @@ exec /bin/bash /code/rawr.sh "$@"
 %post  
 echo "This section happens once after bootstrap to build the image."  
 mkdir -p /code
-apt-get install vim -f -y
+apt-get install vim -f -y -m
 echo "echo RoooAAAAR" >> /code/rawr.sh
 chmod u+x /code/rawr.sh  
