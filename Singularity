@@ -21,5 +21,4 @@ echo ${SINGULARITY_ROOTFS}
 echo "echo RoooAAAAR" >> /code123/rawr.sh
 chmod u+x /code123/rawr.sh
 %files
-src/testSingularity.f90
-ls -lah
+test.f90
