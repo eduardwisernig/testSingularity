@@ -15,9 +15,9 @@ exec /bin/bash /rawr.sh "$@"
 
 %post  
 echo "This section happens once after bootstrap to build the image."  
-mkdir -p /CLASSIC
 echo ${SINGULARITY_ROOTFS}
 echo "echo RoooAAAAR" >> /rawr.sh
 chmod u+x /rawr.sh
+
 %files
 test.f90 /CLASSIC
