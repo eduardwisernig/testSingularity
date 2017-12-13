@@ -11,7 +11,8 @@ export RAWR_BASE
 
 %runscript
 echo "This gets run when you run the image!" 
-exec /bin/bash /code/rawr.sh "$@"  
+exec /bin/bash /code/rawr.sh "$@"
+ls -lah
 
 %post  
 echo "This section happens once after bootstrap to build the image."  
