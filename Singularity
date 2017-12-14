@@ -20,4 +20,4 @@ echo "echo RoooAAAAR" >> /code/rawr.sh
 chmod u+x /code/rawr.sh
 
 %files
-testSingularity.f90 /code
+src/testSingularity.f90 /code
