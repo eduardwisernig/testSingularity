@@ -14,7 +14,7 @@ echo "This gets run when you run the image!"
 
 %post
 apt update
-apt install vim
+apt install vim -y -f -m
 
 %files
 test.f90
