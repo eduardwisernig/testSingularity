@@ -20,4 +20,4 @@ echo ${SINGULARITY_ROOTFS}
 echo "echo RoooAAAAR" >> /code/rawr.sh
 chmod u+x /code/rawr.sh
 %files
-test.f90
+test.f90 /code/test.f90
