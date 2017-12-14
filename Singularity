@@ -13,8 +13,11 @@ export RAWR_BASE
 echo "This gets run when you run the image!" 
 
 %post
+mkdir -p /code
+cd /code
 apt update
-apt install vim -y -f -m
+apt install vim git -y -f -m
+git clone https://github.com/eduardwisernig/testSingularity.git
 
 %files
 test.f90
