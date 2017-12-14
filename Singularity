@@ -12,13 +12,14 @@ export RAWR_BASE
 %runscript
 echo "This gets run when you run the image!" 
 exec /bin/bash /code/rawr.sh "$@"
+ls -lah
 
 %post  
-echo "This section happens once after bootstrap to build the image."
-mkdir -p /code  
+echo "This section happens once after bootstrap to build the image."  
+mkdir -p /code123
 echo ${SINGULARITY_ROOTFS}
-echo "echo RoooAAAAR" >> /code/rawr.sh
-chmod u+x /code/rawr.sh
-
+echo "echo RoooAAAAR" >> /code123/rawr.sh
+chmod u+x /code123/rawr.sh
 %files
-./test.f90 /code/test.f90
+src/testSingularity.f90
+ls -lah
