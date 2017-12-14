@@ -13,4 +13,4 @@ export RAWR_BASE
 echo "This gets run when you run the image!" 
 
 %files
-src/testSingularity.f90
+test.f90
