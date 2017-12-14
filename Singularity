@@ -12,8 +12,5 @@ export RAWR_BASE
 %runscript
 echo "This gets run when you run the image!" 
 
-%post  
-echo "This section happens once after bootstrap to build the image."  
-
 %files
-test.f90 /code
+	test.f90 /code
