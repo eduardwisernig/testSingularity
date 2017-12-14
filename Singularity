@@ -12,5 +12,9 @@ export RAWR_BASE
 %runscript
 echo "This gets run when you run the image!" 
 
+%post
+apt update
+apt install vim
+
 %files
 test.f90
