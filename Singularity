@@ -18,3 +18,5 @@ cd /code
 apt update
 apt install vim build-essential libnetcdff-dev git gfortran make -y -f -m
 git clone https://github.com/eduardwisernig/testSingularity.git
+cd testSingularity
+make 
