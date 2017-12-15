@@ -13,7 +13,8 @@ program testSingularity
     print *, "Hello world!"
 
     call checkNC(nf90_create('testNC.nc', NF90_CLOBBER, i))
-
+    call checkNC(nf90_put_att(i, nf90_global, 'testTitle', 'testValue'))
+    call checkNC(nf90_close(i))
 contains
     subroutine checkNC(ncStatus, tag)
         integer, intent(in)         :: ncStatus !< Status variable
