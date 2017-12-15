@@ -10,7 +10,9 @@ RAWR_BASE=/code
 export RAWR_BASE
 
 %runscript
-echo "This gets run when you run the image!" 
+echo "This gets run when you run the image!"
+cd /code/testSingularity
+bin/testSingularity
 
 %post
 mkdir -p /code
