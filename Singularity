@@ -16,8 +16,11 @@ echo "This gets run when you run the image!"
 mkdir -p /code
 cd /code
 apt update
-apt install vim git gfortran -y -f -m
+apt install vim git gfortran autoconf -y -f -m
+git clone https://github.com/Unidata/netcdf-fortran.git
+
 git clone https://github.com/eduardwisernig/testSingularity.git
+
 
 %files
 test.f90
