@@ -18,7 +18,7 @@ mpirun -n 4 bin/testSingularity
 mkdir -p /code
 cd /code
 apt update
-apt install vim build-essential libnetcdff-dev git gfortran netcdf-bin kate mpich -y -f -m
+apt install vim build-essential libnetcdff-dev git gfortran netcdf-bin kate libhdf5-openmpi-dev -y -f -m
 git clone https://github.com/eduardwisernig/testSingularity.git
 cd testSingularity
 mkdir bin
