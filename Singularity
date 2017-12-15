@@ -18,7 +18,22 @@ cd /code
 apt update
 apt install vim git gfortran autoconf -y -f -m
 git clone https://github.com/Unidata/netcdf-fortran.git
-
+mkdir /code/netcdf
+mkdir /code/netcdf/include
+mkdir /code/netcdf/lib
+cd netcdf-fortran
+autoreconf --install
+autoconf
+export FC=gfortran
+export CC=gfortran
+export CPPFLAGS=-I/code/netcdf/include
+export FCFLAGS=-I/code/netcdf//include
+export LDFLAGS=-L/code/netcdf/lib
+export LIBS=-lnetcdf
+make clean
+./configure --prefix=/code/netcdf
+make install
+cd ..
 git clone https://github.com/eduardwisernig/testSingularity.git
 
 

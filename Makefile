@@ -12,9 +12,9 @@
 FORTRAN_COMPILER = gfortran
 
 all: src/testSingularity.f90
-	$(FORTRAN_COMPILER) -O2 -g \
+	$(FORTRAN_COMPILER) -O2 -g -I/home/acrp001/netcdf/include \
 		-o bin/testSingularity \
-		src/testSingularity.f90
+		src/testSingularity.f90 -lnetcdff
 
 clean:
 	rm -f bin/testSingularity *.mod
