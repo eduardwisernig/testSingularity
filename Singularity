@@ -24,3 +24,4 @@ cd testSingularity
 make
 cd ..
 chmod -R 777 testSingularity
+

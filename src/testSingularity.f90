@@ -12,7 +12,7 @@ program testSingularity
     integer :: i
     print *, "Hello world!"
 
-    call checkNC(nf90_create('testNC.nc', NF90_NOWRITE, i))
+    call checkNC(nf90_create('testNC.nc', NF90_CLOBBER, i))
 
 contains
     subroutine checkNC(ncStatus, tag)
