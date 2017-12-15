@@ -12,7 +12,7 @@
 FORTRAN_COMPILER = gfortran
 
 all: src/testSingularity.f90
-	$(FORTRAN_COMPILER) -O2 -g -I/home/acrp001/netcdf/include \
+	$(FORTRAN_COMPILER) -O2 -g -I/usr/include \
 		-o bin/testSingularity \
 		src/testSingularity.f90 -lnetcdff
 
