@@ -16,7 +16,7 @@ echo "This gets run when you run the image!"
 mkdir -p /code
 cd /code
 apt update
-apt install vim git gfortran autoconf -y -f -m
+apt install vim git gfortran autoconf libtool -y -f -m
 git clone https://github.com/Unidata/netcdf-fortran.git
 mkdir /code/netcdf
 mkdir /code/netcdf/include
