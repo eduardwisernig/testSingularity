@@ -30,7 +30,6 @@ export CPPFLAGS=-I/code/netcdf/include
 export FCFLAGS=-I/code/netcdf//include
 export LDFLAGS=-L/code/netcdf/lib
 export LIBS=-lnetcdf
-make clean
 ./configure --prefix=/code/netcdf
 make install
 cd ..
