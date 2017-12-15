@@ -31,7 +31,7 @@ export FCFLAGS=-I/code/netcdf//include
 export LDFLAGS=-L/code/netcdf/lib
 export LIBS=-lnetcdf
 ./configure --prefix=/code/netcdf
-make install
+
 cd ..
 git clone https://github.com/eduardwisernig/testSingularity.git
 
