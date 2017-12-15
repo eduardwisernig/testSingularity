@@ -12,13 +12,13 @@ export RAWR_BASE
 %runscript
 echo "This gets run when you run the image!"
 cd /code/testSingularity
-bin/testSingularity
+mpirun -n 4 bin/testSingularity
 
 %post
 mkdir -p /code
 cd /code
 apt update
-apt install vim build-essential libnetcdff-dev git gfortran make netcdf-bin -y -f -m
+apt install vim build-essential libnetcdff-dev git gfortran netcdf-bin kate mpich -y -f -m
 git clone https://github.com/eduardwisernig/testSingularity.git
 cd testSingularity
 mkdir bin
