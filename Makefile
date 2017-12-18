@@ -9,7 +9,7 @@
 .PHONY: all clean
 
 # Change this line if you are using a different Fortran compiler
-FORTRAN_COMPILER = mpif90
+FORTRAN_COMPILER = gfortran
 
 all: src/testSingularity.f90
 	$(FORTRAN_COMPILER) -O2 -g -I/usr/include \
